@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+}
+
+h1{
+	color: #FFFFFF;
+}
+a{
+	color: #FFFFFF;
+	text-decoration-line: none;
+}
+span
+{
+  color: #FFFFFF;
+}
+body
+{
+	margin: 0;
+	background: url(bg11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+	height: 100%;
+	padding: 0 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;	
+}
+
+.shadow
+{
+	position: relative;
+	margin: 200px auto 0;
+	width: 400px;
+	height: 100%;
+	background: linear-gradient(0deg,#000,#262626);
+}
+.shadow:before,
+.shadow:after
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: linear-gradient(45deg, #fff,#fff,#000,#fff,#fff,#000,#fff,#fff,#000,#fff,#fff);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+.shadow:after
+{
+filter: blur(15px);
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0 0;
+	}
+	50%
+	{
+		background-position: 300% 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+	}
+}
+
+
+span {
+	color
+	font-size: 12px;
+}
+
+a.botton {
+	border-radius: 20px;
+	border: 1px solid #fdfbfbf3;
+	background-color: #020202c9;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 9px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #fdfbfbf3;
+	background-color: #020202c9;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 9px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	
+}
+input {
+  color: #FFFFFF;
+	border-radius: 40px;
+	background-color: rgba(2, 2, 2, 0.788);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+select {
+	color: #FFFFFF;
+	font-size: 14px;
+	  border-radius: 40px;
+	  background-color: rgba(2, 2, 2, 0.788);
+	  border: none;
+	  padding: 12px 15px;
+	  margin: 8px 0;
+	  width: 100%;
+  }
+textarea{
+	color: #FFFFFF;
+	border-radius: 7px;
+	background-color: rgba(2, 2, 2, 0.788);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
